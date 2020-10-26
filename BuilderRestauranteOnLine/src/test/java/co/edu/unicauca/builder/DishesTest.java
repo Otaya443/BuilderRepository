@@ -29,6 +29,21 @@ public class DishesTest {
         assertEquals(2, dish.getParts().size());
 
     }
+    
+     public void testItalianDish() {
+        System.out.println("Italian Dish");
+        DishDirector director = new DishDirector();
+        DishBuilder italianBuilder = new ItalianDishBuilder();
+        director.setDishBuilder(italianBuilder);
+        director.buildDish();
+        
+        Dish dish = director.getDish();
+        assertEquals("Pizza", dish.getName());
+        assertEquals(36000, dish.getPrice());
+        assertEquals(45000, dish.calculatePriceParts());
+        assertEquals(2, dish.getParts().size());
+
+    }
 
     
 }
