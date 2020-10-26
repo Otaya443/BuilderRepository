@@ -20,16 +20,15 @@ public class ClientMain {
         System.out.println("Oriental dish:" + dish);
         System.out.println("Sus partes: " + dish.getParts().toString());
         System.out.println("Precio de las partes: " + dish.calculatePriceParts());
-        
+
         DishBuilder italianBuilder = new ItalianDishBuilder();
         director.setDishBuilder(italianBuilder);
         director.buildDish();
-        
+
         Dish dishI = director.getDish();
         System.out.println("Italian dish:" + dishI);
         System.out.println("Sus partes: " + dishI.getParts().toString());
         System.out.println("Precio de las partes: " + dishI.calculatePriceParts());
-   
 
     }
 

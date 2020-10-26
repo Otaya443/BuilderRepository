@@ -6,23 +6,25 @@ package co.edu.unicauca.builder;
  * @author Libardo, Julio
  */
 public class DishDirector {
-  private DishBuilder dishBuilder;
 
-  /**
-   * Constructor que inyecta la dependenci
-   * @param dishBuilder 
-   */
+    private DishBuilder dishBuilder;
+
+    /**
+     * Constructor que inyecta la dependenci
+     *
+     * @param dishBuilder
+     */
     public void setDishBuilder(DishBuilder dishBuilder) {
         this.dishBuilder = dishBuilder;
     }
-    
-    public Dish getDish(){
+
+    public Dish getDish() {
         return dishBuilder.getDish();
     }
-    
-    public void buildDish(){
+
+    public void buildDish() {
         dishBuilder.setCore();
         dishBuilder.addParts();
     }
-  
+
 }

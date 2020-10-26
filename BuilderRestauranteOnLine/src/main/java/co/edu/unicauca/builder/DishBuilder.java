@@ -22,7 +22,5 @@ public abstract class DishBuilder {
     public void setDish(Dish dish) {
         this.dish = dish;
     }
-    
-    
 
 }

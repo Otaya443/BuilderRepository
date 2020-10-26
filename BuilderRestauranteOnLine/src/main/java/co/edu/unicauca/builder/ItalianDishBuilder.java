@@ -5,7 +5,7 @@ package co.edu.unicauca.builder;
  * @author Camilo Otaya, Maria Teresa Trujillo
  */
 public class ItalianDishBuilder extends DishBuilder {
-    
+
     @Override
     public void setCore() {
         this.setDish(new ItalianDish("pizza", "Pizza con estilo Europeo, añadiendo ingredientes con ingredientes como masa, los champiñones, queso y salsas", "", 36000, EnumSize.ALL, "Italian Pizza"));
@@ -22,5 +22,5 @@ public class ItalianDishBuilder extends DishBuilder {
     public void setSize() {
         dish.setSize(EnumSize.ALL);
     }
-    
+
 }
